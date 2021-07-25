@@ -1,0 +1,25 @@
+- Pertama buat table terlebih dahulu
+
+create table t_register_dapenbi (
+	nip varchar(100) not null,
+    fullname varchar(100),
+    dob date,
+    gender varchar(1),
+    address varchar(200),
+    idnumber varchar(100),
+    phonenumber varchar(100),
+    isgenerate varchar(1) default '0',
+    primary key(nip)
+)
+
+- Untuk mencoba datanya adalah
+
+insert into t_register_dapenbi (nip,
+		gender,
+		address,
+		idnumber,
+		phonenumber) values ('salnip1','G','5678901234567890','aidnumber','2784928');
+	insert into t_register_dapenbi values ('salnip2','fullnam1',sysdate(),'M','addr12345678901234567890','a1idnumber','+62784928','0');
+	insert into t_register_dapenbi values ('salnip3','fUllnam',sysdate(),'F','addr12345678901234567890','a1idnumber','+62784928','0');
+	insert into t_register_dapenbi values ('salnip4','fullnam',str_to_date('2022-01-12','%Y-%m-%d'),'F','addr12345678901234567890','a1idnumber','+62784928','0');
+	insert into t_register_dapenbi values ('salnip5','fullnam',str_to_date('1980-01-12','%Y-%m-%d'),'M','addr12345678901234567890','a1idnumber','+62784928','0');
