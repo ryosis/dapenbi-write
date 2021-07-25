@@ -6,6 +6,8 @@ Merupakan aplikasi terschedule yang membaca data yang akan digenerate ke sebuah 
 ## Server information
 - OS : windows 10
 - spring boot versi 2.5.3
+- hibernate
+- java 1.8
 - MySQL versi 8
 - Maven 3.8.1
 
